@@ -1,0 +1,25 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, Apple Color Emoji, Segoe UI Emoji; background: #0b0d10; color: #e6e6e6; }
+.container { max-width: 1200px; margin: 0 auto; padding: 24px; }
+header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+.table { width: 100%; border-collapse: collapse; background: #11141a; border: 1px solid #1f2430; border-radius: 8px; overflow: hidden; }
+th, td { padding: 12px 10px; border-bottom: 1px solid #1f2430; text-align: left; }
+th { background: #141923; position: sticky; top: 0; z-index: 1; }
+.row { cursor: pointer; }
+.truncate { max-width: 340px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+.input { padding: 8px 10px; background: #0d1117; color: #e6e6e6; border: 1px solid #1f2430; border-radius: 6px; }
+.select { padding: 8px 10px; background: #0d1117; color: #e6e6e6; border: 1px solid #1f2430; border-radius: 6px; }
+.button { padding: 8px 12px; background: #2b6cb0; color: white; border: 0; border-radius: 6px; cursor: pointer; }
+.button.secondary { background: #334155; }
+.drawer { position: fixed; top: 0; right: 0; height: 100vh; width: 480px; max-width: 95vw; background: #0d1117; box-shadow: -6px 0 16px rgba(0,0,0,0.4); border-left: 1px solid #1f2430; padding: 16px; overflow-y: auto; transform: translateX(100%); transition: transform 0.25s ease; }
+.drawer.open { transform: translateX(0); }
+.drawer-header { display: flex; align-items: center; justify-content: space-between; gap: 8px; border-bottom: 1px solid #1f2430; padding-bottom: 8px; margin-bottom: 12px; }
+.kv { display: grid; grid-template-columns: 140px 1fr; gap: 8px; }
+.kv .label { color: #9aa4b2; }
+.nutrition { margin-top: 12px; }
+.nutrition table { width: 100%; border-collapse: collapse; }
+.nutrition th, .nutrition td { padding: 6px 8px; border-bottom: 1px solid #1f2430; }
+.rating { color: #fbbf24; }
+.pagination { display: flex; align-items: center; gap: 8px; margin-top: 12px; }
+.empty { padding: 24px; text-align: center; color: #9aa4b2; }
